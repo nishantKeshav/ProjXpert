@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/ProjXpert/static/css/main.1a489474.css",
+    "main.js": "/ProjXpert/static/js/main.e179b434.js",
+    "static/js/453.8ab44547.chunk.js": "/ProjXpert/static/js/453.8ab44547.chunk.js",
+    "static/media/LandingPage.jpg": "/ProjXpert/static/media/LandingPage.a5f7c5903f10271b1f64.jpg",
+    "static/media/wave.png": "/ProjXpert/static/media/wave.40d1887aeaea7ecd70cb.png",
+    "static/media/bg.svg": "/ProjXpert/static/media/bg.6a6537711c52105628c05fe5c6ae9945.svg",
+    "static/media/avatar.svg": "/ProjXpert/static/media/avatar.deb822fea1001b6d12ff18c31b23aa28.svg",
+    "index.html": "/ProjXpert/index.html",
+    "main.1a489474.css.map": "/ProjXpert/static/css/main.1a489474.css.map",
+    "main.e179b434.js.map": "/ProjXpert/static/js/main.e179b434.js.map",
+    "453.8ab44547.chunk.js.map": "/ProjXpert/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a489474.css",
+    "static/js/main.e179b434.js"
+  ]
+}
