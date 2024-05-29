@@ -1,0 +1,107 @@
+.after-login {
+       display: flex;
+       flex-direction: row;
+}
+
+.navbar {
+       z-index: 10;
+       height: 65px;
+       width: 1367px;
+       padding-top: 8px;
+       background-color: #32be8f;
+       font-family: calibri;
+       padding-right: 30px;
+       padding-left: 40px;
+       position: fixed;
+
+}
+
+.navdiv {
+       background-color: #32be8f;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+}
+
+ul {
+       background-color: #32be8f;
+}
+
+.logo {
+       background-color: #32be8f;
+}
+
+.logo a {
+       background-color: #32be8f;
+       font-size: 35px;
+       font-weight: 600;
+       color: white;
+       text-decoration: none;
+}
+
+li {
+       background-color: #32be8f;
+       list-style: none;
+       display: inline-block;
+}
+
+li a {
+       background-color: #32be8f;
+       color: white;
+       font-size: 18px;
+       font-weight: bold;
+       margin-right: 25px;
+       text-decoration: none;
+}
+
+li a:hover {
+       text-decoration: overline;
+}
+
+button {
+       appearance: button;
+       background-color: #000;
+       background-image: none;
+       border: 1px solid #000;
+       border-radius: 4px;
+       box-shadow: #51f5cc 4px 4px 0 0, #000 4px 4px 0 1px;
+       box-sizing: border-box;
+       color: #fff;
+       cursor: pointer;
+       display: inline-block;
+       font-size: 14px;
+       font-weight: 400;
+       line-height: 20px;
+       margin: 0 10px 10px 0;
+       overflow: visible;
+       padding: 12px 40px;
+       text-align: center;
+       text-transform: none;
+       touch-action: manipulation;
+       user-select: none;
+       -webkit-user-select: none;
+       vertical-align: middle;
+       white-space: nowrap;
+}
+
+button a {
+       color: #fff;
+}
+
+button:focus {
+       text-decoration: none;
+}
+
+button:hover {
+       text-decoration: none;
+}
+
+button:active {
+       box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+       outline: 0;
+}
+
+button:not([disabled]):active {
+       box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+       transform: translate(2px, 2px);
+}
