@@ -42,7 +42,7 @@ const SignUp = () => {
                             "phone": phoneNo,
                             "age": 22
                      }
-                     const response = await axios.post('http://localhost:7000/user/register', data, {
+                     const response = await axios.post('https://projxpert-tasks-management-application.onrender.com/user/register', data, {
                             headers: {
                                    'Content-Type': 'application/json',
                             },
@@ -51,7 +51,7 @@ const SignUp = () => {
                             navigate('/login');
                      }
               } catch (error) {
-
+                     window.alert(error.response.data.Message);
               }
               setUserName('');
               setPassword('');

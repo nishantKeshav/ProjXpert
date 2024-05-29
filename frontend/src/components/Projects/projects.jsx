@@ -18,7 +18,7 @@ const Projects = () => {
        const fetchProjects = async () => {
               try {
                      const token = localStorage.getItem('Token');
-                     const response = await axios.get('http://localhost:7000/project/Get-Projects', {
+                     const response = await axios.get('https://projxpert-tasks-management-application.onrender.com/project/Get-Projects', {
                             headers: {
                                    'Content-Type': 'application/json',
                                    Authorization: `Bearer ${token}`,
@@ -28,7 +28,7 @@ const Projects = () => {
                             setAllProjects(response.data.data);
                      }
               } catch (error) {
-
+                     window.alert(error.response.data.Message);
               }
        };
 
@@ -48,7 +48,7 @@ const Projects = () => {
                             "description": projectDescription
                      }
                      const token = localStorage.getItem('Token');
-                     const response = await axios.post('http://localhost:7000/project/Create-Project', data, {
+                     const response = await axios.post('https://projxpert-tasks-management-application.onrender.com/project/Create-Project', data, {
                             headers: {
                                    'Content-Type': 'application/json',
                                    Authorization: `Bearer ${token}`,
@@ -58,7 +58,7 @@ const Projects = () => {
                             fetchProjects();
                      }
               } catch (error) {
-
+                     window.alert(error.response.data.Message);
               }
               setShowModal(false);
        };

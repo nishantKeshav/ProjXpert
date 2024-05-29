@@ -49,6 +49,7 @@ const loginUser = async (req, res) => {
        try {
               const email = req.body.email;
               const password = md5(req.body.password);
+              console.log(email, password);
               const user = await users_model.findOne({ email: email })
               if (!user) {
                      code = 404;

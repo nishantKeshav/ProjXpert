@@ -40,7 +40,7 @@ const Tasks = () => {
                      const token = localStorage.getItem('Token');
                      const response = await axios({
                             method: "post",
-                            url: 'http://localhost:7000/task/All-Tasks',
+                            url: 'https://projxpert-tasks-management-application.onrender.com/task/All-Tasks',
                             data: data,
                             headers: {
                                    "Content-Type": "application/json",
@@ -57,6 +57,7 @@ const Tasks = () => {
                      }
               } catch (error) {
                      console.error("Error fetching tasks:", error);
+                     window.alert(error.response.data.Message);
               }
        };
 
@@ -80,7 +81,7 @@ const Tasks = () => {
                      const token = localStorage.getItem('Token');
                      const response = await axios({
                             method: "post",
-                            url: 'http://localhost:7000/task/Update-Task',
+                            url: 'https://projxpert-tasks-management-application.onrender.com/task/Update-Task',
                             data: data,
                             headers: {
                                    "Content-Type": "application/json",
@@ -91,7 +92,7 @@ const Tasks = () => {
                             fetchTasks();
                      }
               } catch (error) {
-
+                     window.alert(error.response.data.Message);
               }
        };
 
@@ -103,7 +104,7 @@ const Tasks = () => {
                      const token = localStorage.getItem('Token');
                      const response = await axios({
                             method: "post",
-                            url: 'http://localhost:7000/project/Get-Members',
+                            url: 'https://projxpert-tasks-management-application.onrender.com/project/Get-Members',
                             data: data,
                             headers: {
                                    "Content-Type": "application/json",
@@ -116,6 +117,7 @@ const Tasks = () => {
                      }
               } catch (error) {
                      alert("Error Fetching Members");
+                     window.alert(error.response.data.Message);
               }
        }
 
@@ -152,7 +154,7 @@ const Tasks = () => {
                             "AssignedUserId": assignTo.split(' ')[2]
                      }
                      const token = localStorage.getItem('Token');
-                     const response = await axios.post('http://localhost:7000/task/Add-Task', data, {
+                     const response = await axios.post('https://projxpert-tasks-management-application.onrender.com/task/Add-Task', data, {
                             headers: {
                                    'Content-Type': 'application/json',
                                    Authorization: `Bearer ${token}`,
@@ -163,7 +165,7 @@ const Tasks = () => {
                             setShowAddTaskModal(false);
                      }
               } catch (error) {
-
+                     window.alert(error.response.data.Message);
               }
        }
 
@@ -177,7 +179,7 @@ const Tasks = () => {
 
                      }
                      const token = localStorage.getItem('Token');
-                     const response = await axios.post('http://localhost:7000/project/Add-Members', data, {
+                     const response = await axios.post('https://projxpert-tasks-management-application.onrender.com/project/Add-Members', data, {
                             headers: {
                                    'Content-Type': 'application/json',
                                    Authorization: `Bearer ${token}`,
@@ -188,7 +190,7 @@ const Tasks = () => {
                             setShowAddMemberModal(false);
                      }
               } catch (error) {
-
+                     window.alert(error.response.data.Message);
               }
        }
 

@@ -28,7 +28,7 @@ const Auth = () => {
                             "email": userEmail,
                             "password": password
                      }
-                     const response = await axios.post('http://localhost:7000/user/login', data, {
+                     const response = await axios.post('https://projxpert-tasks-management-application.onrender.com/user/login', data, {
                             headers: {
                                    'Content-Type': 'application/json',
                             },
@@ -41,7 +41,7 @@ const Auth = () => {
                             window.location.reload();
                      }
               } catch (error) {
-
+                     window.alert(error.response.data.Message);
               }
               setUserEmail('');
               setPassword('');
